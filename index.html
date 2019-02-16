@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Account</title>
+
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="grayBox">
+            <div class="left">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Don't have an account yet?<br />Sign Up for an account.</p>
+                    <button id="signUp">Sign Up</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="container">
+                    <h1>Sign In</h1>
+                    <p>Already have an account?<br />Sign In to your account.</p>
+                    <button id="signIn">Sign In</button>
+                </div>
+            </div>
+        </div>
+        <div class="whiteBox">
+            <div class="container">
+                <div id="signInForm">
+                    <h1>Sign In</h1>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" />
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" />
+
+                    <button class="ellipse">Sign In</button>
+
+                    <div class="forgotPassword">Forgot Password?</div>
+                </div>
+                <div id="signUpForm" style="display: none;">
+                    <h1>Sign Up</h1>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" />
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" />
+
+                    <button class="ellipse">Sign Up</button>
+
+                    <div class="forgotPassword">Sign up with Google account.</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

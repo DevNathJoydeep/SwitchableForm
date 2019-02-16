@@ -1,0 +1,163 @@
+html {
+    height: 100vh;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    height: 105vh;
+    width: 105vw;
+    top: -2.5vh;
+    left: -2.5vw;
+    display: block;
+    background: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+.grayBox {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+    width: 55%;
+    margin: auto;
+    background: rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.2);
+}
+
+.grayBox .left, .grayBox .right {
+    text-align: center;
+    display: grid;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: #ec5353;
+}
+
+p {
+    font-size: 16px;
+    margin: 15px 0 0 0;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+
+button {
+    font-size: 16px;
+    margin: 25px 0 0 0;
+    color: #ec5353;
+    border: 1px solid #ec5353;
+    background: transparent;
+    font-family: Montserrat, sans-serif;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+button:hover {
+    background: #ec5353;
+    color: rgba(0,0,0,0.75);
+}
+
+.whiteBox {
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    left: 50%;
+    height: 355px;
+    width: 25%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.2);
+    transition: all 500ms ease-in-out;
+}
+
+.whiteBox .container {
+    text-align: center;
+}
+
+.whiteBox #signInForm, .whiteBox #signUpForm {
+    border: 3px double #ec5353;
+    padding: 20px;
+}
+
+input {
+    text-align: left;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    border: 1px solid #ec5353;
+    border-radius: 3px;
+    color: #ec5353;
+    width: 100%;
+    padding: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+input:focus {
+    background: rgba(0,0,0,0.05);
+}
+
+label {
+    display: block;
+    margin: 8px 0 2px 0;
+    color: #ec5353;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+label:first-of-type {
+    margin-top: 20px;
+}
+
+.forgotPassword {
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+    color: #ec5353;
+    margin-top: 25px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: pointer;
+}
+
+.ellipse {
+    font-size: 16px;
+    margin: 25px 0 0 0;
+    color: white;
+    border: 1px solid #ec5353;
+    background: #ec5353;
+    font-family: Montserrat, sans-serif;
+    padding: 8px 20px;
+    border-radius: 500px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.ellipse:hover {
+    color: white;
+    box-shadow: 0 0 8px 0 #ec5353;
+}
